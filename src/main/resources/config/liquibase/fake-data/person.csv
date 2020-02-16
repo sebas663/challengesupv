@@ -1,0 +1,11 @@
+id;first_name;second_name;last_name;second_last_name;document_type;document_number;country;sex;birthday;telephone_number;email
+1;Ayana;Jewelery;Barrows;Homel;DNI;40227000;ARG;M;1982-02-12;1155832610;Ayana.Jewelery@gmail.com
+2;Jonas;;Pits;;DNI;40227001;ARG;H;1980-06-12;1155832611;Jonas.Pits@gmail.com
+3;Edmond;Wilson;Zapata;;PASSPORT;93000111;COL;H;1990-07-25;1155832612;Edmond.Wilson@gmail.com
+4;Sebastian;;Escudero;;DNI;40227002;ARG;H;1982-09-02;1155832615;sebastian_escuderoh@hotmail.com
+5;Julia;;Roberts;Tompson;PASSPORT;93000112;USA;M;1982-02-12;1155832613;Julia.Roberts@gmail.com
+6;Robert;Jamal;Simons;Tok;PASSPORT;40227003;USA;H;1979-04-23;1155832614;Robert.Jamal@gmail.com
+7;Pablo;;Barrows;;DNI;40227004;ARG;H;1983-03-14;1155832616;Pablo.Barrows@gmail.com
+8;Cintia;;Ramirez;;DNI;40227005;ARG;M;2001-10-30;1155832617;Cintia.Ramirez@gmail.com
+9;Dakota;;Jonson;;PASSPORT;40227006;USA;M;1965-06-29;1155832618;Dakota.Jonson@gmail.com
+10;Scarlet;;Johanson;;PASSPORT;40227007;USA;M;1987-11-19;1155832619;Scarlet.Johanson@gmail.com
