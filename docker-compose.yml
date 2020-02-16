@@ -1,0 +1,49 @@
+version: '3'
+services:
+  supvnginx:
+   container_name: supvnginx
+   image: nginx:1.13
+   restart: always
+   ports:
+      - 80:80
+      - 443:443
+   volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+   depends_on:
+      - supvapp
+   networks:
+      - backend
+
+  supvmariadb:
+   container_name: supvmariadb
+   image: mariadb:10.3
+   environment:
+      - MYSQL_DATABASE=supervielle
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=supervielle
+      - MYSQL_PASSWORD=supervielle
+      - MYSQL_ROOT_HOST='%'
+   ports:
+      - "3306:3306"
+   restart: always
+   networks:
+      - backend
+  
+  supvapp:
+    restart: always
+    build: ./app
+    working_dir: /app
+    volumes:
+      - ./app:/app
+      - ~/.m2:/root/.m2
+    expose:
+      - "8081"
+    command: mvn spring-boot:run -Dspring-boot.run.profiles=prod
+    depends_on:
+      - supvmariadb
+    networks:
+      - backend
+
+networks:       
+  backend:
+    driver: bridge

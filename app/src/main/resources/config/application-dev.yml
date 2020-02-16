@@ -13,7 +13,7 @@
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
     com.supv.challenge: INFO
 
 spring:
