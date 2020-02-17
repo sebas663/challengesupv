@@ -1,6 +1,6 @@
-#Challengesupv
+# Challengesupv
 
-##Api publica con datos precargados para poder ver el resultado de los endpoint sin cargar datos.
+## Api publica con datos precargados para poder ver el resultado de los endpoint sin cargar datos.
 
 GET, POST, PUT
 http://104.198.150.70/api/personas
@@ -17,7 +17,7 @@ http://104.198.150.70/api/relaciones/{id1}/{id2}
 GET
 http://104.198.150.70/api/estadisticas
 
-##Ejemplo del body para el  POST
+## Ejemplo del body para el  POST
 
 ```
  {
@@ -34,7 +34,7 @@ http://104.198.150.70/api/estadisticas
   "email" : "Ayana.Jewelery@gmail.com"
  }
 ```
-##Clonando el proyecto se puede correr localmente en un terminal
+## Clonando el proyecto se puede correr localmente en un terminal
 
 Parado sobre el directorio app:
 
@@ -48,7 +48,8 @@ Parado sobre el directorio challengesupv:
 
         Win, linux, si es linux depende la instalacion de Docker y Docker-compose, se puede requerir "sudo"
 ```
-        $] docker-compose up -d
+$] docker-compose up -d
+
 ```   
 	levanta una instancia de nginx, la aplicacion y una instancia de maria db
 
