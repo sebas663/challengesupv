@@ -38,7 +38,7 @@ services:
       - ~/.m2:/root/.m2
     expose:
       - "8081"
-    command: mvn spring-boot:run -Dspring-boot.run.profiles=prod
+    command: mvn spring-boot:run
     depends_on:
       - supvmariadb
     networks:
