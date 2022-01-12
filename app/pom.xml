@@ -29,7 +29,7 @@
 		<profile.no-liquibase />
 		<profile.swagger />
 		<spring-boot.version>2.2.4.RELEASE</spring-boot.version>
-		<spring.version>5.2.3.RELEASE</spring.version>
+		<spring.version>5.3.14</spring.version>
 		<hibernate.version>5.4.10.Final</hibernate.version>
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
 		<zalando.version>0.25.2</zalando.version>
